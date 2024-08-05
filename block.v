@@ -24,7 +24,7 @@ module block(inp_north, inp_west, clk, rst, outp_south, outp_east, result);
 	output reg [7:0] outp_south, outp_east;
 	output reg [15:0] result;
 	wire [15:0] multi;
-	always @(posedge clk) begin
+	always @(posedge clk) begin //ddddddd
 		if(!rst) begin
 			result <= 0;
 			outp_east <= 0;
